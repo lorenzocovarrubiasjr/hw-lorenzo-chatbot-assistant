@@ -11,7 +11,7 @@ class OpenAIAPI {
                 'Authorization': `Bearer ${apiKey}`,
             },
             body: JSON.stringify({
-                model: "gpt-4.1",
+                model: "gpt-4.1-nano",
                 messages: conversationHistory.concat([{ role: 'user', content: userMessage }]),
                 max_tokens: 150
             }),
